@@ -1,5 +1,6 @@
 package frc.robot.subsystems;
 
+import edu.wpi.first.math.controller.PIDController;
 import edu.wpi.first.math.geometry.Pose2d;
 import edu.wpi.first.math.geometry.Rotation2d;
 import edu.wpi.first.math.kinematics.ChassisSpeeds;
@@ -28,6 +29,8 @@ public class SwerveSubsystem extends SubsystemBase
     var cfg = new SwerveDriveConfig()
         .withStartingPose(new Pose2d(3, 3, Rotation2d.kZero))
         .withSubsystem(this)
+        .withTranslationController(new PIDController(4, 0, 0))
+        .withRotationController(new PIDController(1, 0, 0))
         .withTelemetry("swerve", TelemetryVerbosity.HIGH);
     try
     {
