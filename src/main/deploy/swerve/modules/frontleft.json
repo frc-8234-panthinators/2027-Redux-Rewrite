@@ -1,0 +1,28 @@
+{
+  "drive": {
+    "type": "talonfx_krakenx60",
+    "id": 7,
+    "canbus": ""
+  },
+  "angle": {
+    "type": "talonfx_krakenx44",
+    "id": 8,
+    "canbus": ""
+  },
+  "absoluteEncoder": {
+    "type": "canandmag_can",
+    "id": 9,
+    "canbus": "",
+    "channel": 0
+  },
+  "inverted": {
+    "drive": false,
+    "angle": true
+  },
+  "absoluteEncoderInverted": true,
+  "absoluteEncoderOffset": 0,
+  "location": {
+    "front": 10.875,
+    "left": 11.375
+  }
+}
